@@ -42,17 +42,29 @@
                                     <segue destination="Wmh-SM-R0m" kind="modal" id="lof-uc-F3C"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb3-aL-aPB">
+                                <rect key="frame" x="20" y="299" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JQu-zn-xhF" firstAttribute="top" secondItem="NGb-8U-O2j" secondAttribute="bottom" id="5KE-Xd-9Qw"/>
+                            <constraint firstItem="zb3-aL-aPB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="FMd-wX-Bfs"/>
                             <constraint firstItem="NGb-8U-O2j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RfE-Rw-uxY"/>
                             <constraint firstAttribute="trailing" secondItem="m8d-h3-1Fd" secondAttribute="trailing" constant="120" id="ag3-np-uw9"/>
+                            <constraint firstItem="NGb-8U-O2j" firstAttribute="top" secondItem="zb3-aL-aPB" secondAttribute="bottom" constant="60" id="ebz-a5-6e0"/>
                             <constraint firstItem="m8d-h3-1Fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="fks-O2-Uqc"/>
                             <constraint firstItem="m8d-h3-1Fd" firstAttribute="top" secondItem="gZn-Ps-hq1" secondAttribute="bottom" constant="40" id="g0i-k7-vfy"/>
                             <constraint firstAttribute="trailing" secondItem="NGb-8U-O2j" secondAttribute="trailing" id="gHr-8a-d6O"/>
+                            <constraint firstAttribute="trailing" secondItem="zb3-aL-aPB" secondAttribute="trailing" constant="20" symbolic="YES" id="rNy-dR-UYI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="zb3-aL-aPB" id="TFe-0o-eQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

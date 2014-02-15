@@ -7,6 +7,7 @@
 //
 
 #import "FIGSubmitViewController.h"
+#import "FIGViewController.h"
 
 @interface FIGSubmitViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
@@ -25,7 +26,17 @@
 
 #pragma mark - IBActions
 - (IBAction)submitButtonPressed:(id)sender {
-  NSLog(@"Hello World");
+  [self populateWelcomeLabelWithFirstName:self.firstNameTextField.text andLastName:self.lastNameTextField.text];
+}
+
+#pragma mark - Textfield Changing
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if (textField == self.firstNameTextField) {
+    [self.lastNameTextField becomeFirstResponder];
+  } else if (textField == self.lastNameTextField) {
+    [self performSegueWithIdentifier:@"unwindToStartViewController" sender:nil];
+  }
+  return YES;
 }
 
 #pragma mark - Private Methods
@@ -39,14 +50,9 @@
   }
 }
 
-#pragma mark - Textfield Changing
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-  if (textField == self.firstNameTextField) {
-    [self.lastNameTextField becomeFirstResponder];
-  } else if (textField == self.lastNameTextField) {
-    [self submitButtonPressed:nil];
-  }
-  return YES;
+- (void)populateWelcomeLabelWithFirstName:(NSString*)firstName andLastName:(NSString*)lastName {
+  FIGViewController *controller = [[FIGViewController alloc] init];
+  controller.welcomeLabel.text = [NSString stringWithFormat:@"Welcome to the party %@ %@!", firstName, lastName];
 }
 
 @end

@@ -18,6 +18,11 @@
   [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+//  self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome to the party %@ %@!", @"John", @"Fig"];
+}
+
+#pragma mark - IBActions
 - (IBAction)unwindToFIG:(UIStoryboardSegue *)unwindSegue {
 }
 
