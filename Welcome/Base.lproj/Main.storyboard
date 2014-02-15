@@ -99,6 +99,9 @@
                                         <color key="textColor" red="0.2470588235" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wmh-SM-R0m" id="eoH-PX-BQP"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,6 +123,9 @@
                                         <color key="textColor" red="0.2470588235" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wmh-SM-R0m" id="A9l-kA-uHY"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,6 +151,7 @@
                     <connections>
                         <outlet property="firstNameTextField" destination="XN2-DO-BrP" id="DcD-KC-Gz9"/>
                         <outlet property="lastNameTextField" destination="gZ5-h5-OkH" id="jFh-R5-6xx"/>
+                        <outlet property="submitButton" destination="xVI-12-QMd" id="myD-TU-I9J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mm-0t-bfF" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *badgeHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 @end
 
 @implementation FIGSubmitViewController
@@ -24,7 +25,7 @@
 
 #pragma mark - IBActions
 - (IBAction)submitButtonPressed:(id)sender {
-
+  NSLog(@"Hello World");
 }
 
 #pragma mark - Private Methods
@@ -36,6 +37,16 @@
   } else {
     self.badgeHeightConstraint.constant = 10.f;
   }
+}
+
+#pragma mark - Textfield Changing
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if (textField == self.firstNameTextField) {
+    [self.lastNameTextField becomeFirstResponder];
+  } else if (textField == self.lastNameTextField) {
+    [self submitButtonPressed:nil];
+  }
+  return YES;
 }
 
 @end
