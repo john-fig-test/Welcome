@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C128C1C18B29B5D008779CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CA051D618AECF61008D1AB4 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		5CA051B818AECF61008D1AB4 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +168,7 @@
 		5CA051F918AED1D4008D1AB4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5C128C1C18B29B5D008779CC /* Views */,
 				5CA051FB18AED1F5008D1AB4 /* Application */,
 				5CA051FC18AED1FF008D1AB4 /* Controllers */,
 				5CA051CB18AECF61008D1AB4 /* Supporting Files */,
@@ -170,7 +179,6 @@
 		5CA051FA18AED1DD008D1AB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5CA051D618AECF61008D1AB4 /* Main.storyboard */,
 				5CA051DC18AECF61008D1AB4 /* Images.xcassets */,
 			);
 			name = Resources;

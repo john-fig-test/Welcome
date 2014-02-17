@@ -42,10 +42,10 @@
                                     <segue destination="Wmh-SM-R0m" kind="modal" id="lof-uc-F3C"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zb3-aL-aPB">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zb3-aL-aPB" userLabel="Welcom Label">
                                 <rect key="frame" x="20" y="320" width="280" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.2470588235" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -126,11 +126,11 @@
                                     <constraint firstAttribute="bottom" secondItem="gZ5-h5-OkH" secondAttribute="bottom" id="tJp-ww-dGq"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0f-ax-YMd">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0f-ax-YMd">
                                 <rect key="frame" x="0.0" y="20" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XN2-DO-BrP">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XN2-DO-BrP">
                                         <rect key="frame" x="20" y="0.0" width="280" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.2470588235" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,11 +143,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="XN2-DO-BrP" firstAttribute="top" secondItem="w0f-ax-YMd" secondAttribute="top" id="2Yo-9k-KLf"/>
-                                    <constraint firstAttribute="height" constant="80" id="92n-8u-kDn"/>
-                                    <constraint firstAttribute="bottom" secondItem="XN2-DO-BrP" secondAttribute="bottom" id="XrI-dA-LTg"/>
-                                    <constraint firstAttribute="trailing" secondItem="XN2-DO-BrP" secondAttribute="trailing" constant="20" id="hfQ-me-NwT"/>
-                                    <constraint firstItem="XN2-DO-BrP" firstAttribute="leading" secondItem="w0f-ax-YMd" secondAttribute="leading" constant="20" id="kKu-A8-Cen"/>
+                                    <constraint firstAttribute="height" constant="80" id="8O6-o5-xBH"/>
+                                    <constraint firstItem="XN2-DO-BrP" firstAttribute="leading" secondItem="w0f-ax-YMd" secondAttribute="leading" constant="20" id="RS3-ya-Zcq"/>
+                                    <constraint firstItem="XN2-DO-BrP" firstAttribute="top" secondItem="w0f-ax-YMd" secondAttribute="top" id="YH2-Af-frI"/>
+                                    <constraint firstAttribute="trailing" secondItem="XN2-DO-BrP" secondAttribute="trailing" constant="20" id="gaS-aB-15z"/>
+                                    <constraint firstAttribute="bottom" secondItem="XN2-DO-BrP" secondAttribute="bottom" id="omj-TC-PLI"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -155,6 +155,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xVI-12-QMd" secondAttribute="trailing" id="GvN-9f-0M0"/>
                             <constraint firstItem="xVI-12-QMd" firstAttribute="top" secondItem="Af2-jW-VOy" secondAttribute="bottom" id="TXf-bC-gae"/>
+                            <constraint firstAttribute="trailing" secondItem="w0f-ax-YMd" secondAttribute="trailing" id="cTA-T6-z9h"/>
+                            <constraint firstItem="w0f-ax-YMd" firstAttribute="top" secondItem="fnR-4K-Z8K" secondAttribute="bottom" id="eDp-Vo-mET"/>
+                            <constraint firstItem="Af2-jW-VOy" firstAttribute="top" secondItem="w0f-ax-YMd" secondAttribute="bottom" id="gKZ-yK-APL"/>
+                            <constraint firstItem="w0f-ax-YMd" firstAttribute="leading" secondItem="DA2-oJ-Heu" secondAttribute="leading" id="gLo-oO-yRd"/>
                             <constraint firstItem="3Bl-av-Ptb" firstAttribute="top" secondItem="xVI-12-QMd" secondAttribute="bottom" constant="210" id="hE6-Vr-6cS"/>
                             <constraint firstAttribute="trailing" secondItem="Af2-jW-VOy" secondAttribute="trailing" id="hZy-xa-ICK"/>
                             <constraint firstItem="xVI-12-QMd" firstAttribute="leading" secondItem="DA2-oJ-Heu" secondAttribute="leading" id="jYq-8w-ZwL"/>
