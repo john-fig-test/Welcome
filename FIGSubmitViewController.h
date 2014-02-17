@@ -8,5 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString * const kFIGWelcomeLabelSet = @"kFIGWelcomeLabelSet";
+
 @interface FIGSubmitViewController : UIViewController
 @end

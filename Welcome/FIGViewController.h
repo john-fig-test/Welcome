@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FIGViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
+- (void)populateWelcomeLabelWithFirstName:(NSString*)firstName andLastName:(NSString*)lastName;
 @end

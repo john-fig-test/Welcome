@@ -26,7 +26,7 @@
 
 #pragma mark - IBActions
 - (IBAction)submitButtonPressed:(id)sender {
-  [self populateWelcomeLabelWithFirstName:self.firstNameTextField.text andLastName:self.lastNameTextField.text];
+  [self sendFullNameInformation];
 }
 
 #pragma mark - Textfield Changing
@@ -34,6 +34,7 @@
   if (textField == self.firstNameTextField) {
     [self.lastNameTextField becomeFirstResponder];
   } else if (textField == self.lastNameTextField) {
+    [self sendFullNameInformation];
     [self performSegueWithIdentifier:@"unwindToStartViewController" sender:nil];
   }
   return YES;
@@ -50,9 +51,11 @@
   }
 }
 
-- (void)populateWelcomeLabelWithFirstName:(NSString*)firstName andLastName:(NSString*)lastName {
-  FIGViewController *controller = [[FIGViewController alloc] init];
-  controller.welcomeLabel.text = [NSString stringWithFormat:@"Welcome to the party %@ %@!", firstName, lastName];
+- (void)sendFullNameInformation {
+  NSString *firstName = self.firstNameTextField.text;
+  NSString *lastName = self.lastNameTextField.text;
+  NSDictionary *userName = [[NSDictionary alloc] initWithObjectsAndKeys:firstName, @"firstName", lastName, @"lastName", nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:kFIGWelcomeLabelSet object:nil userInfo:userName];
 }
 
 @end
