@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-h3-1Fd">
-                                <rect key="frame" x="120" y="60" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios-logo" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-h3-1Fd">
+                                <rect key="frame" x="110" y="60" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="nMr-Wa-mac"/>
-                                    <constraint firstAttribute="width" constant="80" id="rgx-no-J36"/>
+                                    <constraint firstAttribute="width" constant="100" id="IRg-WT-1Bf"/>
+                                    <constraint firstAttribute="height" constant="100" id="pIf-pB-CjQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGb-8U-O2j">
@@ -32,11 +32,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start" backgroundImage="light-blue-pill">
-                                    <color key="titleColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.24313725490196078" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted" image="dark-blue-pill">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.79215686269999996" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.56862745100000001" green="0.66666666669999997" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Wmh-SM-R0m" kind="modal" id="lof-uc-F3C"/>
@@ -46,19 +46,19 @@
                                 <rect key="frame" x="20" y="320" width="280" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.2470588235" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JQu-zn-xhF" firstAttribute="top" secondItem="NGb-8U-O2j" secondAttribute="bottom" id="5KE-Xd-9Qw"/>
                             <constraint firstItem="zb3-aL-aPB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="FMd-wX-Bfs"/>
+                            <constraint firstItem="m8d-h3-1Fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="110" id="N98-MF-xFs"/>
+                            <constraint firstAttribute="trailing" secondItem="m8d-h3-1Fd" secondAttribute="trailing" constant="110" id="PSv-dj-KTA"/>
                             <constraint firstItem="NGb-8U-O2j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RfE-Rw-uxY"/>
-                            <constraint firstAttribute="trailing" secondItem="m8d-h3-1Fd" secondAttribute="trailing" constant="120" id="ag3-np-uw9"/>
+                            <constraint firstItem="m8d-h3-1Fd" firstAttribute="top" secondItem="gZn-Ps-hq1" secondAttribute="bottom" constant="40" id="WJX-Uo-JhV"/>
                             <constraint firstItem="NGb-8U-O2j" firstAttribute="top" secondItem="zb3-aL-aPB" secondAttribute="bottom" constant="60" id="ebz-a5-6e0"/>
-                            <constraint firstItem="m8d-h3-1Fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="fks-O2-Uqc"/>
-                            <constraint firstItem="m8d-h3-1Fd" firstAttribute="top" secondItem="gZn-Ps-hq1" secondAttribute="bottom" constant="40" id="g0i-k7-vfy"/>
                             <constraint firstAttribute="trailing" secondItem="NGb-8U-O2j" secondAttribute="trailing" id="gHr-8a-d6O"/>
                             <constraint firstAttribute="trailing" secondItem="zb3-aL-aPB" secondAttribute="trailing" constant="20" symbolic="YES" id="rNy-dR-UYI"/>
                         </constraints>
@@ -91,11 +91,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Submit" backgroundImage="light-blue-pill">
-                                    <color key="titleColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="dark-blue-pill">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.79215686269999996" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.81960784310000001" green="0.85882352939999995" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="submitButtonPressed:" destination="Wmh-SM-R0m" eventType="touchUpInside" id="Edo-Aj-reh"/>
@@ -117,7 +117,7 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="gZ5-h5-OkH" secondAttribute="trailing" constant="20" id="C3K-Bu-xOz"/>
                                     <constraint firstItem="gZ5-h5-OkH" firstAttribute="leading" secondItem="Af2-jW-VOy" secondAttribute="leading" constant="20" id="OYY-e0-Oj2"/>
@@ -141,7 +141,7 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="8O6-o5-xBH"/>
                                     <constraint firstItem="XN2-DO-BrP" firstAttribute="leading" secondItem="w0f-ax-YMd" secondAttribute="leading" constant="20" id="RS3-ya-Zcq"/>
@@ -151,7 +151,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.8980392157" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xVI-12-QMd" secondAttribute="trailing" id="GvN-9f-0M0"/>
                             <constraint firstItem="xVI-12-QMd" firstAttribute="top" secondItem="Af2-jW-VOy" secondAttribute="bottom" id="TXf-bC-gae"/>
@@ -179,8 +179,8 @@
     </scenes>
     <resources>
         <image name="dark-blue-pill" width="2" height="2"/>
+        <image name="ios-logo" width="462" height="462"/>
         <image name="light-blue-pill" width="2" height="2"/>
-        <image name="logo" width="85" height="85"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
